@@ -20,4 +20,4 @@ Responsive multi-page website for Maxwell Scientific, built with semantic, Polyg
 
 ## Contributors (PR Test Run)
 * Leslie 'mazal' Berrie
-* [Add your name here to test]
+* Nidal Abushukhaidem
