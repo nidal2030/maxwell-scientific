@@ -150,6 +150,11 @@ ul {
   background-position: top center;
 }
 
+.elect-banner {
+	background-image: url("../images/elect_banner.jpg");
+	background-position: top center;
+}
+
 /* Intro Section */
 .intro {
   background-color: #fff;
@@ -506,4 +511,82 @@ p.review-stars {
   font-size: 0.7rem;
   color: #555;
   line-height: 1.2;
+}
+
+/* Featured Electronics Products */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 830px;
+  margin: 45px 0 70px;
+}
+
+.product-card {
+  background-color: #f5f6f2;
+  border: 1px solid #d1d8e0;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* .product-card:hover {
+  transform: translateY(-3px);
+} */
+
+.product-thumbnail {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  color: #183153;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.product-meta {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.product-price {
+  color: #2b6b43;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-thumbnail {
+    height: 180px;
+  }
 }
