@@ -151,8 +151,17 @@ ul {
 }
 
 .elect-banner {
-	background-image: url("../images/elect_banner.jpg");
-	background-position: top center;
+	background-image: url("../images/elect_banner_modified.jpg");
+	background-position: center 30%;
+	height: 380px;
+}
+
+.contact-banner {
+	background-image: url("../images/contact-us.jpg");
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no repeat;
+	background-color: #f1f1f1;
 }
 
 /* Intro Section */
@@ -316,6 +325,17 @@ footer address {
   background-color: #204973;
   color: #fff;
   padding: 45px 35px;
+}
+
+.sidebar-nav a {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+    font-weight: bold;
+    color: #f7bc41;
+    margin-bottom: 15px;
+	border: 3px outset #CCCCCC;
 }
 
 .sidebar-links li {
@@ -571,6 +591,63 @@ p.review-stars {
   margin-top: 8px;
 }
 
+/* contact page styles */
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 80%;
+}
+
+input, textarea {
+	margin-bottom: 0.5em;
+}
+
+/* prepare page styles */
+
+.prep-card {
+    background-color: #f5f6f2;
+    border: 1px solid #d1d8e0;
+    border-radius: 6px;
+    padding: 1.5em;
+}
+
+.onehalf {
+	float: left;
+	width: 50%;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.onehalf h3 {
+    background-color: #183153;
+    color: white;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.onehalf dt {
+    background-color: #204973;
+    color: white;
+    padding: .5rem .75rem;
+    margin-top: 1rem;
+    border-left: 5px solid #f7bc41;
+}
+
+.onehalf dd {
+    padding: .75rem 1rem;
+    background-color: white;
+    border: 1px solid #d1d8e0;
+    border-top: none;
+}
+.onehalf dt {
+    background-color: #ECE6D9;
+    padding: 0.25em;
+    font-weight: bold;
+    margin-top: 0.75em;
+}
+
 
 /* ==========================================================================
    6. Responsive & Mobile Styles (Tablet & Mobile Breakpoints)
@@ -783,6 +860,22 @@ p.review-stars {
   .footer-links li {
     line-height: 2.4;
   }
+  
+  form {
+		width: 60%;
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: 12em 1fr;
+	}
+	
+	input[type="submit"] {
+    grid-column: 2 / 3;
+    width: 9em;
+	}
+	
+	label {
+		text-align: right;
+	}
 }
 
 /* Narrow Phones: 1-column product cards */
