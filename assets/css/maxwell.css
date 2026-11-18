@@ -213,28 +213,47 @@ ul {
 }
 
 /* Color Blocks Section */
-.color-blocks {
+.department-container {
+  /* border: 1px solid green; */
+
   background-color: #f5f6f2;
   padding: 30px 0;
   margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
 
-.color-blocks h2 {
+.department-container h2 {
+  /* border: 1px solid orange; */
   font-size: 1.2rem;
   padding: 0 0 20px;
   color: #2a4a78;
 }
 
 .blocks-container {
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
 
-.block {
+/* .block {
+  border: 3px dotted black;
   flex: 1;
   aspect-ratio: 3 / 2;
+  display: grid;
+  gap: 30px;
+} */
+
+.block {
+  /* border: 3px dotted black; */
+  flex: 1;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 15px;
 }
 
 .block-blue {
