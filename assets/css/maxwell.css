@@ -1,4 +1,4 @@
-/* CIS-1310-NET01 • COLLAB | maxwell.css v.04h | Leslie Berrie (berriel@dupage.edu) • Nidal Abu-shukhaidem (abu-shukhaidemn@dupage.edu) | CC0-1.0 */
+/* CIS-1310-NET01 • COLLAB | maxwell.css v.05h | Leslie Berrie (berriel@dupage.edu) • Nidal Abu-shukhaidem (abu-shukhaidemn@dupage.edu) | CC0-1.0 */
 
 /* 1. Reset and Base Styles */
 *,
@@ -152,8 +152,8 @@ ul {
 
 .elect-banner {
   /* Fixed broken banner path: elect_banner_modified.jpg does not exist in assets/images */
-	/* background-image: url("../images/elect_banner_modified.jpg"); */
-	background-image: url("../images/elect_banner.jpg");
+  /* background-image: url("../images/elect_banner_modified.jpg"); */
+  background-image: url("../images/elect_banner.jpg");
   /* background-image: url("../images/elect_banner_modified.jpg"); */
   background-image: url("../images/elect_banner.jpg");
   background-position: center 30%;
@@ -213,47 +213,28 @@ ul {
 }
 
 /* Color Blocks Section */
-.department-container {
-  /* border: 1px solid green; */
-
+.color-blocks {
   background-color: #f5f6f2;
   padding: 30px 0;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
 }
 
-.department-container h2 {
-  /* border: 1px solid orange; */
+.color-blocks h2 {
   font-size: 1.2rem;
   padding: 0 0 20px;
   color: #2a4a78;
 }
 
 .blocks-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
 
-/* .block {
-  border: 3px dotted black;
-  flex: 1;
-  aspect-ratio: 3 / 2;
-  display: grid;
-  gap: 30px;
-} */
-
 .block {
-  /* border: 3px dotted black; */
   flex: 1;
   aspect-ratio: 3 / 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 20px 15px;
 }
 
 .block-blue {
