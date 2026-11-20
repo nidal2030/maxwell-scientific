@@ -156,22 +156,9 @@ ul {
 }
 
 .elect-banner {
-  /* Fixed broken banner path: elect_banner_modified.jpg does not exist in assets/images */
-  /* background-image: url("../images/elect_banner_modified.jpg"); */
-  background-image: url("../images/elect_banner.jpg");
-  /* background-image: url("../images/elect_banner_modified.jpg"); */
-  background-image: url("../images/elect_banner.jpg");
+  background-image: url("../images/elect-banner2.avif");
   background-position: center 30%;
-  height: 380px;
 }
-
-/* .contact-banner {
-  background-image: url("../images/contact-us.jpg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #f1f1f1;
-} */
 
 /* Intro Section */
 .intro {
@@ -566,10 +553,6 @@ p.review-stars {
   transition: transform 0.2s ease;
 }
 
-/* .product-card:hover {
-  transform: translateY(-3px);
-} */
-
 .product-thumbnail {
   width: 100%;
   height: 140px;
@@ -740,20 +723,6 @@ p.contact-subtitle {
   object-position: left center;
 }
 
-/* contact page styles */
-
-/* form {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  width: 80%;
-}
-
-input,
-textarea {
-  margin-bottom: 0.5em;
-} */
-
 /* prepare page styles */
 
 .prep-card {
@@ -817,7 +786,6 @@ textarea {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  /* Turned into h2 heading for accessiblity compliance—test font size */
   font-size: 1.17rem;
 }
 
@@ -874,10 +842,6 @@ textarea {
     width: 100%;
     padding-left: 0;
   }
-
-  /* h1.contact-heading {
-    font-size: .5rem;
-  } */
 
   h1#contact-heading {
     font-size: 2.9rem;
@@ -1061,22 +1025,6 @@ textarea {
     line-height: 2.4;
   }
 
-  /* form {
-    width: 60%;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 12em 1fr;
-  }
-
-  input[type="submit"] {
-    grid-column: 2 / 3;
-    width: 9em;
-  }
-
-  label {
-    text-align: right;
-  } */
-
   /* Contact Page: Mobile type & card spacing */
   #contact-header {
     font-size: 1.4rem;
@@ -1113,12 +1061,4 @@ textarea {
   p.contact-subtitle {
     font-size: 1.1rem;
   }
-
-    /* h1#contact-heading {
-    font-size: 2.9rem;
-  }
-
-  p.contact-subtitle {
-    font-size: 1.2rem;
-  } */
 }
