@@ -78,12 +78,27 @@ header {
   align-items: center;
 }
 
-.search-icon {
+/* .search-icon {
   position: absolute;
   right: 0.55rem;
   font-size: 0.85rem;
   line-height: 1;
   pointer-events: none;
+} */
+
+.search-icon {
+  position: absolute;
+  right: 0.55rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 .search-box input {
