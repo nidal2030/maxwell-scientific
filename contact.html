@@ -33,6 +33,8 @@
               <li><a href="elect.html">Electronics</a></li>
               <li><a href="eng.html">Engineering</a></li>
               <li><a href="physics.html">Physics</a></li>
+              <li><a href="prepare.html">Preparation Guide</a></li>
+              <li><a href="links.html">Useful Links</a></li>
               <li><a class="current" href="#">Contact Us</a></li>
             </ul>
           </nav>
@@ -47,49 +49,42 @@
     </header>
 
     <!-- Primary Page Content -->
-    <main>
-      <!-- Decorative Hero Banner -->
-      <div class="hero contact-banner" aria-hidden="true"></div>
+    <main class="contact-wrapper">
+      <div class="interior-contact">
+        <section aria-labelledby="contact-heading">
+          <div class="contact-layout">
+            <div id="contact-header">
+              <h1 id="contact-heading">We look forward to meeting you</h1>
+              <p class="contact-subtitle">Connect with our friendly staff - they're eager to assist you.</p>
+              <img class="contact-illustration" src="./assets/images/contact-us-4.jpg" alt="Contact Us" />
+            </div>
 
-      <!-- Interior Two-Column Layout (Full-Bleed Left Sidebar + Right Content) -->
-      <div class="interior-layout">
-        <!-- Left Sidebar for Links -->
-        <aside class="sidebar" aria-label="Maxwell Scientific Resources">
-          <nav class="sidebar-nav" aria-label="Resources Section">
-            <ul class="sidebar-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="prepare.html">Preparation Guide</a></li>
-              <li><a href="links.html">Useful Links</a></li>
-            </ul>
-          </nav>
-        </aside>
+            <div class="contact-form">
+              <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+                <label for="myName">Name:</label>
+                <input type="text" name="myName" id="myName" required="required" />
 
-        <!-- Right Main Content Column -->
-        <div class="interior-content">
-          <!-- Contact Form -->
-          <section class="astro-intro" aria-labelledby="astro-heading">
-            <h1 id="astro-heading">Contact Us</h1>
-            <p>Fill out the form below to contact our staff at Maxwell Scientific. All information is required.</p>
-            <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
-              <label for="myName">Name:</label>
-              <input type="text" name="myName" id="myName" required="required" />
-              <label for="myEmail">E-mail:</label>
-              <input type="email" name="myEmail" id="myEmail" required="required" />
-              <label for="mySubject">What is the subject of your inquery?</label>
-              <input type="text" name="mySubject" id="mySubject" list="subject" required="required" />
-              <datalist id="subject">
-                <option value="Astronomy">Astronomy</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="Electronics">Electronics</option>
-                <option value="Engineering">Engineering</option>
-                <option value="Physics">Physics</option>
-              </datalist>
-              <label for="myComments">Questions or Comments:</label>
-              <textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
-              <input type="submit" value="Send Now" id="mySubmit" />
-            </form>
-          </section>
-        </div>
+                <label for="myEmail">E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required" />
+
+                <label for="mySubject">What is the subject of your inquiry?</label>
+                <input type="text" name="mySubject" id="mySubject" list="subject" required="required" />
+                <datalist id="subject">
+                  <option value="Astronomy">Astronomy</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Engineering">Engineering</option>
+                  <option value="Physics">Physics</option>
+                </datalist>
+
+                <label for="myComments">Questions or Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+
+                <input type="submit" value="Send Now" id="mySubmit" />
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 

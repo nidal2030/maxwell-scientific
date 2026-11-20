@@ -165,13 +165,13 @@ ul {
   height: 380px;
 }
 
-.contact-banner {
+/* .contact-banner {
   background-image: url("../images/contact-us.jpg");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #f1f1f1;
-}
+} */
 
 /* Intro Section */
 .intro {
@@ -607,9 +607,142 @@ p.review-stars {
   margin-top: 8px;
 }
 
+/* ==========================================================================
+   Contact Page Styles
+   ========================================================================== */
+
+.interior-contact {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  justify-content: center;
+}
+
+.contact-layout {
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+#contact-header {
+  margin: 100px 0 100px 50px;
+  max-width: 540px;
+  padding-left: 2.5rem;
+  color: #012269;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+p.contact-subtitle {
+  padding-top: 20px;
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 1.3;
+  letter-spacing: 1pt;
+  color: #083f97;
+}
+
+.contact-illustration {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.contact-form {
+  min-width: 400px;
+  background-color: #f4f8fc;
+  border: 1px solid #d9e6f2;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(12, 43, 89, 0.08);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  width: 80%;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0c2b59;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.85rem;
+  margin-bottom: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0c2b59;
+  box-shadow: 0 0 0 3px rgba(12, 43, 89, 0.12);
+}
+
+.contact-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-form input[type="submit"],
+.contact-form button {
+  width: 100%;
+  background-color: #0c2b59;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form button:hover {
+  background-color: #16407d;
+}
+
+.contact-image {
+  max-height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: left center;
+}
+
 /* contact page styles */
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
@@ -619,7 +752,7 @@ form {
 input,
 textarea {
   margin-bottom: 0.5em;
-}
+} */
 
 /* prepare page styles */
 
@@ -711,6 +844,48 @@ textarea {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Contact Page: Stack header and form vertically */
+  .contact-layout {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 40px 5% 60px;
+  }
+
+  #contact-header {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .contact-illustration {
+    margin: 24px auto 0;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+  }
+
+  .contact-form form {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* h1.contact-heading {
+    font-size: .5rem;
+  } */
+
+  h1#contact-heading {
+    font-size: 2.9rem;
+  }
+
+  p.contact-subtitle {
+    font-size: 1.2rem;
+  }
 }
 
 /* Mobile & Small Tablet: 768px */
@@ -800,37 +975,13 @@ textarea {
   }
 
   /* 6. Interior Pages: Hide left sidebar */
-  /* NOTE: Commented code left in for sidebar alt options */
   .interior-layout {
     flex-direction: column;
   }
 
   .sidebar {
     display: none;
-    /* border: 1px solid red;
-    width: 100%;
-    padding: 20px 5%; */
   }
-
-  /* .sidebar-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 14px;
-    line-height: 1.5;
-  }
-
-  .sidebar-links li {
-    line-height: 1.5;
-  }
-
-  .sidebar-links a {
-    font-size: 0.9rem;
-    background-color: #183153;
-    padding: 6px 12px;
-    border-radius: 4px;
-    display: inline-block;
-  } */
 
   /* Remove the 140px desktop left-padding so content centers cleanly */
   .interior-content {
@@ -910,7 +1061,7 @@ textarea {
     line-height: 2.4;
   }
 
-  form {
+  /* form {
     width: 60%;
     display: grid;
     grid-gap: 1em;
@@ -924,6 +1075,24 @@ textarea {
 
   label {
     text-align: right;
+  } */
+
+  /* Contact Page: Mobile type & card spacing */
+  #contact-header {
+    font-size: 1.4rem;
+  }
+
+  p.contact-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-illustration {
+    width: 85%;
+    max-width: 320px;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
   }
 }
 
@@ -936,4 +1105,20 @@ textarea {
   .product-thumbnail {
     height: 180px;
   }
+
+  h1#contact-heading {
+    font-size: 2rem;
+  }
+
+  p.contact-subtitle {
+    font-size: 1.1rem;
+  }
+
+    /* h1#contact-heading {
+    font-size: 2.9rem;
+  }
+
+  p.contact-subtitle {
+    font-size: 1.2rem;
+  } */
 }
