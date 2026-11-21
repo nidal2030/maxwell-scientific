@@ -172,16 +172,14 @@ ul {
   background-position: center 30%;
 }
 
-
 .eng-banner {
   background-image: url("../images/eng-banner.jpg");
   background-position: center 1%;
 }
 
-
 .physics-banner {
-  background-image: url("../images/physics-banner.jpg");
-  background-position: center 59%;
+  background-image: url("../images/physics-banner.png");
+  background-position: center center;
 }
 
 /* Intro Section */
