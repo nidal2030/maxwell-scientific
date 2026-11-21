@@ -78,14 +78,6 @@ header {
   align-items: center;
 }
 
-/* .search-icon {
-  position: absolute;
-  right: 0.55rem;
-  font-size: 0.85rem;
-  line-height: 1;
-  pointer-events: none;
-} */
-
 .search-icon {
   position: absolute;
   right: 0.55rem;
@@ -240,7 +232,6 @@ ul {
 }
 
 .block {
-  /* border: 3px dotted black; */
   flex: 1;
   aspect-ratio: 3 / 2;
   display: flex;
@@ -552,13 +543,12 @@ p.review-stars {
 }
 
 .reviewer-avatar {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background-color: #136fd8;
-
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   flex-shrink: 0;
   display: block;
 }
