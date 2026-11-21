@@ -162,9 +162,26 @@ ul {
   background-position: top center;
 }
 
+.chem-banner {
+  background-image: url("../images/chem-banner.jpg");
+  background-position: center 15%;
+}
+
 .elect-banner {
   background-image: url("../images/elect-banner2.avif");
   background-position: center 30%;
+}
+
+
+.eng-banner {
+  background-image: url("../images/eng-banner.jpg");
+  background-position: center 1%;
+}
+
+
+.physics-banner {
+  background-image: url("../images/physics-banner.jpg");
+  background-position: center 59%;
 }
 
 /* Intro Section */
