@@ -431,6 +431,11 @@ footer address {
   margin: 65px 0 95px;
 } */
 
+.special {
+  font-weight: bold;
+  color: red;
+}
+
 .product-box {
   width: 200px;
   aspect-ratio: 3 / 2;
