@@ -423,13 +423,13 @@ footer address {
 }
 
 /* 5 Product Placeholder Boxes */
-.product-grid {
+/* .product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 75px 115px;
   max-width: 830px;
   margin: 65px 0 95px;
-}
+} */
 
 .product-box {
   width: 200px;
