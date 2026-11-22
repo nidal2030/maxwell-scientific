@@ -154,31 +154,31 @@ ul {
 }
 
 .splash-banner {
-  background-image: url("../images/hero_splash.jpg");
+  background-image: url("../images/banner/hero_splash.avif");
 }
 
 .astro-banner {
-  background-image: url("../images/astro_banner.jpg");
+  background-image: url("../images/banner/astro_banner.avif");
   background-position: top center;
 }
 
 .chem-banner {
-  background-image: url("../images/chem-banner.jpg");
+  background-image: url("../images/banner/chem-banner.avif");
   background-position: center 15%;
 }
 
 .elect-banner {
-  background-image: url("../images/elect-banner2.avif");
+  background-image: url("../images/banner/elect-banner2.avif");
   background-position: center 30%;
 }
 
 .eng-banner {
-  background-image: url("../images/eng-banner.jpg");
+  background-image: url("../images/banner/eng-banner.avif");
   background-position: center 1%;
 }
 
 .physics-banner {
-  background-image: url("../images/physics-banner.png");
+  background-image: url("../images/banner/physics-banner.avif");
   background-position: center center;
 }
 
