@@ -805,14 +805,6 @@ p.contact-subtitle {
   font-size: 1.17rem;
 }
 
-.onehalf dt {
-  background-color: #204973;
-  color: #183153;
-  padding: 0.5rem 0.75rem;
-  margin-top: 1rem;
-  border-left: 5px solid #f7bc41;
-}
-
 .onehalf dd {
   padding: 0.75rem 1rem;
   background-color: white;
@@ -825,6 +817,7 @@ p.contact-subtitle {
   padding: 0.25em;
   font-weight: bold;
   margin-top: 0.75em;
+  border-left: 5px solid #f7bc41;
 }
 
 /* links page styles */
@@ -880,6 +873,30 @@ p.contact-subtitle {
 .onethird a:hover {
   color: #f7bc41;
   text-decoration: underline;
+}
+
+/* add skip navigation link */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  padding: 12px 16px;
+  background-color: #f7bc41;
+  color: #000;
+  font-weight: bold;
+  z-index: 9999;
 }
 
 /* ==========================================================================
